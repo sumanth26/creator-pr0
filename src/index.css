@@ -1,0 +1,109 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 106 79% 96%;
+    --foreground: 140 50% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 50% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 50% 20%;
+
+    --primary: 144 30% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 106 79% 96%;
+    --secondary-foreground: 140 50% 20%;
+
+    --muted: 106 59% 94%;
+    --muted-foreground: 142 13% 40%;
+
+    --accent: 144 25% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 144 20% 87%;
+    --input: 144 20% 87%;
+    --ring: 144 30% 39%;
+
+    --radius: 0.8rem;
+  }
+
+  .dark {
+    --background: 140 50% 8%;
+    --foreground: 106 79% 96%;
+
+    --card: 140 50% 10%;
+    --card-foreground: 106 79% 96%;
+
+    --popover: 140 50% 10%;
+    --popover-foreground: 106 79% 96%;
+
+    --primary: 144 30% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 140 20% 16%;
+    --secondary-foreground: 106 79% 96%;
+
+    --muted: 140 20% 16%;
+    --muted-foreground: 142 13% 75%;
+
+    --accent: 144 25% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 20% 22%;
+    --input: 140 20% 22%;
+    --ring: 144 30% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-creator-light text-creator-text antialiased overflow-x-hidden;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  .card-glass {
+    @apply bg-white/85 backdrop-blur-sm border border-white/50 shadow-sm;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
